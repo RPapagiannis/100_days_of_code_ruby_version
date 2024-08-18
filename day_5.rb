@@ -5,6 +5,15 @@ def ask_question(question)
   gets.chomp
 end
 
+def identify_hero(attribute, hero)
+  if attribute == 'yes'
+    puts "Then you're #{hero}!"
+  else
+    puts "Then you're not #{hero}."
+  end
+  puts
+end
+
 puts '
 Marvel Movie Character Creator
 --
@@ -14,30 +23,12 @@ puts
 
 likes_hanging_around = ask_question("Do you like 'hanging around'? ")
 
-if likes_hanging_around == 'yes'
-  puts "Then you're Spiderman"
-else
-  puts "Aw, you're not Spiderman"
-end
-
-puts
+identify_hero(likes_hanging_around, 'Spiderman')
 
 has_gravely_voice = ask_question("Do you have a 'gravelly' voice? ")
 
-if has_gravely_voice == 'yes'
-  puts "Then you're Korg"
-else
-  puts "Aw, you're not Korg"
-end
-
-puts
+identify_hero(has_gravely_voice, 'Korg')
 
 feels_marvelous = ask_question("Do you often feel 'Marvelous'? ")
 
-if feels_marvelous == 'yes'
-  puts "You're captain Marvel!"
-else
-  puts "You're Doctor nobody! "
-end
-
-puts
+identify_hero(feels_marvelous, 'Cpt. Marvel')
