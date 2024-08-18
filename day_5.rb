@@ -25,6 +25,10 @@ likes_hanging_around = ask_question("Do you like 'hanging around'? ")
 
 identify_hero(likes_hanging_around, 'Spiderman')
 
+wears_armor = ask_question('Do you wear armor? ')
+
+identify_hero(wears_armor, 'Ironman')
+
 has_gravely_voice = ask_question("Do you have a 'gravelly' voice? ")
 
 identify_hero(has_gravely_voice, 'Korg')
